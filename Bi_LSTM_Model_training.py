@@ -59,7 +59,7 @@ def creat_bi_lstm(vocab_size, label_size, input_shape, output_dim, n_unite, out_
 
 #  模型训练
 def model_train():
-    #  将数据集分为训练集和测试集，占比为9：1
+    #  将数据集分为训练集和测试集，占比为9:1
     input_shape = 60
     x, y, output_dictionary, vocab_size, label_size, inverse_word_dictionary = input_data_for_model(input_shape)
     train_end = int(len(x) * 0.9)
